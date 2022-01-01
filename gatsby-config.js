@@ -1,4 +1,5 @@
 module.exports = {
+    pathPrefix: "/thall1961.github.io",
     siteMetadata: {
         title: `Dev Tips, Tutorials, and Training`,
         author: `Tom Hall`,
