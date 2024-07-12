@@ -21,20 +21,20 @@ export default function Hero() {
       <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
         <div className="flex items-center">
           <div className="">
-            <h1 className="font-bold tracking-tight text-dark-blue">
+            <h1 className="font-bold tracking-tight text-gray-900">
               <span className="text-4xl sm:text-6xl font-serif">Tom Hall</span>
             </h1>
           </div>
-          <div className="ml-4 text-dark-blue">
+          <div className="ml-4 text-gray-900">
             <span className="text-xl font-thin tracking-widest leading-3 pb-1">software<br/>developer</span>
           </div>
         </div>
         <div className="mt-3 flex">
-          {tags.map((t, index) => <span className="font-semibold text-primary mr-1.5 text-xs"
+          {tags.map((t, index) => <span className="font-semibold text-blue-500 mr-1.5 text-xs"
                                         key={t}>{t}{index < tags.length - 1 ?
             <span className="font-thin"> | </span> : ''}</span>)}
         </div>
-        <p className="mt-6 font-serif leading-8 text-dark-blue sm:max-w-md lg:max-w-none">
+        <p className="mt-6 font-serif leading-8 text-gray-900 sm:max-w-md lg:max-w-none">
           I&apos;ve built a lot of software products. It is a difficult thing to go from nothing to an idea to
           a prototype to an MVP to version 1.0. Have a look around at some of the products I have built and
           helped
@@ -43,11 +43,11 @@ export default function Hero() {
         <div className="mt-10 flex items-center gap-x-6">
           <Link
             to="/"
-            className="rounded-md bg-dark-blue px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="rounded-md bg-gray-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             View Work
           </Link>
-          <Link to="/cadre" className="text-sm font-semibold leading-6 text-dark-blue">
+          <Link to="/cadre" className="text-sm font-semibold leading-6 text-gray-900">
             Learn how to build <span aria-hidden="true">→</span>
           </Link>
         </div>

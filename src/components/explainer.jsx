@@ -30,7 +30,7 @@ export default function Explainer() {
                 incorporating AI into useful software. I have built lots and lots of MVPs, and now I help other people
                 get started with their first MVP.
               </p>
-              <Link to="/cadre" className="text-primary text-xs font-bold underline">Learn to build &rarr;</Link>
+              <Link to="/cadre" className="text-blue-500 text-xs font-bold underline">Learn to build &rarr;</Link>
             </div>
           </div>
           <div className="lg:flex lg:flex-auto lg:justify-center">
