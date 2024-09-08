@@ -1,7 +1,7 @@
-import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/outline/index.js";
-import {Dialog, DialogPanel} from "@headlessui/react";
-import {useState} from "react";
-import {Link} from "react-router-dom";
+import { Dialog, DialogPanel } from "@headlessui/react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import Signature from '../assets/signature.png';
 
 const navigation = [
   // { name: 'Product', href: '#' },
@@ -93,11 +93,10 @@ export default function Layout({ children }) {
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Tom Hall | Developer</span>
-              <p><span className="font-black"><span className="underline">tom</span> | <span
-                className="underline">hall</span></span></p>
+              <img src={Signature} alt="" width="150" />
             </Link>
           </div>
-          <div className="flex lg:hidden">
+          {/* <div className="flex lg:hidden">
             <button
               type="button"
               onClick={() => setMobileMenuOpen(true)}
@@ -113,12 +112,12 @@ export default function Layout({ children }) {
                 {item.name}
               </a>
             ))}
-          </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          </div> */}
+          {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <Link to="/cadre" className="text-sm font-semibold leading-6 text-gray-900">
               Build <span aria-hidden="true">&rarr;</span>
             </Link>
-          </div>
+          </div> */}
         </nav>
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
           <div className="fixed inset-0 z-50"/>
@@ -130,16 +129,16 @@ export default function Layout({ children }) {
                 <p><span className="font-black"><span className="underline">tom</span> | <span
                   className="underline">hall</span></span></p>
               </Link>
-              <button
+              {/* <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
                 className="-m-2.5 rounded-md p-2.5 text-gray-700"
               >
                 <span className="sr-only">Close menu</span>
                 <XMarkIcon aria-hidden="true" className="h-6 w-6"/>
-              </button>
+              </button> */}
             </div>
-            <div className="mt-6 flow-root">
+            {/* <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
@@ -161,7 +160,7 @@ export default function Layout({ children }) {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </DialogPanel>
         </Dialog>
       </header>
@@ -211,7 +210,7 @@ export default function Layout({ children }) {
         </div>
       </main>
       <footer className="mx-auto mt-24 max-w-7xl overflow-hidden px-6 pb-20 sm:mt-48 sm:pb-24 lg:px-8">
-        <nav aria-label="Footer" className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12">
+        {/* <nav aria-label="Footer" className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12">
           {footerNavigation.main.map((item) => (
             <div key={item.name} className="pb-6">
               <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
@@ -219,15 +218,15 @@ export default function Layout({ children }) {
               </a>
             </div>
           ))}
-        </nav>
-        <div className="mt-10 flex justify-center space-x-10">
+        </nav> */}
+        {/* <div className="mt-10 flex justify-center space-x-10">
           {footerNavigation.social.map((item) => (
             <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">{item.name}</span>
               <item.icon aria-hidden="true" className="h-6 w-6" />
             </a>
           ))}
-        </div>
+        </div> */}
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
           &copy; {new Date().getFullYear()} Tom Hall, All rights reserved.
         </p>

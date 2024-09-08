@@ -1,5 +1,5 @@
-import Layout from "../components/layout.jsx";
 import Form from "../components/form";
+import Layout from "../components/layout.jsx";
 
 export default function Cadre() {
   return (
@@ -17,7 +17,6 @@ export default function Cadre() {
             investment.
           </p>
         </div>
-        <h2 className="my-12 font-bold text-gray-900 text-xl font-serif">&darr; Send your information to join the next cadre &darr;</h2>
         <div className="max-w-lg">
           <Form />
         </div>

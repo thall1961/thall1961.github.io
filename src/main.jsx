@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Root from './routes/root'
 import Cadre from './routes/cadre'
+import Work from './routes/work'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: '/cadre',
     element: <Cadre />
+  },
+  {
+    path: '/work',
+    element: <Work />
   }
 ]);
 
