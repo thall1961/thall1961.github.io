@@ -11,16 +11,6 @@ export function WorkItem({logo, lifeSpan, title, description, stats = [], curren
         <p className="mt-2 text-gray-600">{description}</p>
         <small className="block mt-6">Current State: <strong>{currentState}</strong></small>
       </div>
-      <div className="flex-shrink-0 ml-4">
-        <dl className="w-64 space-y-8">
-          {stats.map((stat) => (
-            <div key={stat.label} className="flex flex-col-reverse gap-y-4">
-              <dt className="text-base leading-7 text-gray-600">{stat.label}</dt>
-              <dd className="text-5xl font-semibold tracking-tight text-gray-900">{stat.value}</dd>
-            </div>
-          ))}
-        </dl>
-      </div>
     </div>
   )
 }
