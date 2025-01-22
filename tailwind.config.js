@@ -32,6 +32,36 @@ export default {
           'from': { borderColor: 'transparent' },
           '50%': { borderColor: 'black' },
           'to': { borderColor: 'transparent' }
+        },
+        'card-left': {
+          '0%': { 
+            opacity: '0',
+            transform: 'translate(-600px, -600px)'
+          },
+          '100%': { 
+            opacity: '1',
+            transform: 'translate(0, 0)'
+          }
+        },
+        'card-right': {
+          '0%': { 
+            opacity: '0',
+            transform: 'translate(600px, -600px)'
+          },
+          '100%': { 
+            opacity: '1',
+            transform: 'translate(0, 0)'
+          }
+        },
+        'fade-in': {
+          '0%': { 
+            opacity: '0',
+            transform: 'translateY(-10px)'
+          },
+          '100%': { 
+            opacity: '1',
+            transform: 'translateY(0)'
+          }
         }
       },
       animation: {
@@ -41,7 +71,10 @@ export default {
         'float-delay-3': 'float 6s ease-in-out 4.5s infinite',
         'float-delay-4': 'float 6s ease-in-out 6s infinite',
         'typing': 'typing 2s steps(8)',
-        'cursor': 'blink 1s infinite'
+        'cursor': 'blink 1s infinite',
+        'card-left': 'card-left 1s ease-out forwards',
+        'card-right': 'card-right 1s ease-out forwards',
+        'fade-in': 'fade-in 0.5s ease-out forwards'
       }
     },
   },
