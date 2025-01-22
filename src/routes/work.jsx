@@ -66,6 +66,7 @@ const companies = [
     name: 'Breeze Airways',
     logo: 'https://www.flybreeze.com/assets/images/Logo.svg',
     url: 'https://www.flybreeze.com/',
+    title: 'Engineering Manager / Associate Engineering Manager / Software Project Lead / Web Developer',
     currentState: 'Active',
     yearFounded: 2020,
     lifeSpan: '2020-present',
@@ -76,6 +77,47 @@ const companies = [
       '- Work to be more agile and have more effective scrum ceremonies',
       '- Work to keep communication between team members and management',
       '- Work with Sr Management to deliver the features they thought would best help Breeze',
+    ]
+  },
+  {
+    id: 'ienfbeubebf8',
+    name: 'Zendesk',
+    logo: 'https://imgs.search.brave.com/ZsrxC9rEjCy46y53AY2ebuVeJFEr4S6xr3eJO--A500/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bG9nby53aW5lL2Ev/bG9nby9aZW5kZXNr/L1plbmRlc2stTG9n/by53aW5lLnN2Zw',
+    url: 'https://www.zendesk.com/',
+    title: 'Senior Software Engineer',
+    currentState: 'Ended',
+    yearFounded: 2022,
+    lifeSpan: 'Mar 2022 - Jun 2022',
+    highlights: [
+      '- React and Rails, full stack engineer focused on front-end',
+    ]
+  },
+  {
+    id: 'elecaskjcdkjcd89',
+    name: 'Electask',
+    logo: 'https://cdn.prod.website-files.com/616dba56c6330b338c0f842d/616dc3458f0f3d22c57af713_Electask%20NEW-p-500.png',
+    url: 'https://www.electask.com/',
+    title: 'Founder/Web Developer',
+    currentState: 'Acquired',
+    yearFounded: 2018,
+    lifeSpan: 'Oct 2017 - Aug 2021',
+    highlights: [
+      '- React front end with Ruby on Rails backend web app (70% React and (30% Rails) that helps counties manage election tasks',
+      '- Brought on 3 counties in CA each with renewing 2 year contracts',
+      '-Acquired by a private investor in August 2021',
+    ]
+  },
+  {
+    id: 'ishfid9fdh',
+    name: 'DHI Computing Service',
+    title: 'Full Stack Web Developer',
+    logo: 'https://www.dhicorp.org/hubfs/images/logos/logo-dhicorp-250.svg',
+    url: 'https://www.dhicorp.com/',
+    currentState: 'Ended',
+    yearFounded: 2016,
+    lifeSpan: 'Nov 2016 - Feb 2020',
+    highlights: [
+      '- Managed the websites and web content for DHI Computing Service and it\'s 4 divisions. Working with HubSpot, HTML, CSS, and JavaScript (React, GatsbyJS, SanityCMS)'
     ]
   }
 ];
@@ -95,7 +137,7 @@ export default function Work() {
             ))}
             </div>
             <div className="lg:w-1/2">
-          <h2 className="text-xl font-bold">Companies</h2>
+          <h2 className="text-xl font-bold font-serif">Companies</h2>
           {companies.map(company => (
             <div key={company.id} className="max-w-md my-12 p-6 bg-white rounded shadow hover:shadow-xl transition-all border-b border-gray-200">
               <WorkItem {...company} />
