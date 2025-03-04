@@ -71,7 +71,7 @@ const companies = [
     logo: "https://www.flybreeze.com/assets/images/Logo.svg",
     url: "https://www.flybreeze.com/",
     title:
-      "Engineering Manager / Associate Engineering Manager / Software Project Lead / Web Developer",
+      "Software Engineering Manager ˿ Associate Engineering Manager ˿ Software Project Lead ˿ Web Developer",
     currentState: "Active",
     yearFounded: 2020,
     lifeSpan: "2020-present",
@@ -110,33 +110,6 @@ const companies = [
       </p>
       <p style="margin-bottom: 20px">
         I'm also proud of the progress I've made in managing a team, many multi-million dollar projects, and developing the members on my team.
-      </p>
-    </div>
-    `,
-  },
-  {
-    id: "ienfbeubebf8",
-    name: "Zendesk",
-    logo: "https://imgs.search.brave.com/ZsrxC9rEjCy46y53AY2ebuVeJFEr4S6xr3eJO--A500/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bG9nby53aW5lL2Ev/bG9nby9aZW5kZXNr/L1plbmRlc2stTG9n/by53aW5lLnN2Zw",
-    url: "https://www.zendesk.com/",
-    title: "Senior Software Engineer",
-    currentState: "Ended",
-    yearFounded: 2022,
-    lifeSpan: "Mar 2022 - Jun 2022",
-    highlights: ["- React and Rails, full stack engineer focused on front-end"],
-    content: `
-    <div class="font-serif text-lg">
-      <p style="margin-bottom: 20px">
-        Although my time at Zendesk was short, I learned a lot and was able to work with some amazing people.
-      </p>
-      <p style="margin-bottom: 20px">
-        I left Breeze because they had an in-office only policy.  I'm not a fan of that.
-      </p>
-      <p style="margin-bottom: 20px">
-        Shortly after I joined Zendesk, the VP of Engineering at Breeze reached out to me and asked me to come back to Breeze and said that I could work remotely.
-      </p>
-      <p style="margin-bottom: 20px">
-        After a few short talks, I decided to go back to Breeze.  But I will forever be grateful for my short time at Zendesk.
       </p>
     </div>
     `,
