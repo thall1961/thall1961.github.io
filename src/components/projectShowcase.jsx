@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { WorkItem } from './workItem';
 
 export default function ProjectShowcase({ projects }) {
@@ -66,6 +67,9 @@ export default function ProjectShowcase({ projects }) {
             </div>
           </div>
         ))}
+      </div>
+      <div className="flex justify-center">
+        <Link to="/work" className="mt-12 bg-black text-white px-4 py-2 rounded-full">View All</Link>
       </div>
     </div>
   );

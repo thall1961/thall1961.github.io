@@ -1,28 +1,14 @@
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Signature from "../assets/signature.png";
-import { useTheme } from "../context/ThemeContext";
 
 // eslint-disable-next-line react/prop-types
 export default function Layout({ children }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { theme } = useTheme();
+
   return (
-    <div className={`${theme === "dark" ? "dark:bg-gray-900" : "bg-white"} transition-colors`}>
+    <div className={`bg-white transition-colors`}>
       <header className="absolute inset-x-0 top-0 z-50">
-        <nav
-          aria-label="Global"
-          className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
-        >
-          <div className="flex lg:flex-1 justify-between">
-            <Link to="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Tom Hall | Developer</span>
-              <img src={Signature} alt="" width="150" className="dark:invert" />
-            </Link>
-            {/* <ThemeToggle /> */}
-          </div>
-        </nav>
         <Dialog
           open={mobileMenuOpen}
           onClose={setMobileMenuOpen}
@@ -33,7 +19,7 @@ export default function Layout({ children }) {
             <div className="flex items-center justify-between">
               <Link to="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Tom Hall | Developer</span>
-                <p className={`${theme === "dark" ? "dark:text-white" : ""}`}>
+                <p className={`text-black`}>
                   <span className="font-black">
                     <span className="underline">tom</span> |{" "}
                     <span className="underline">hall</span>
@@ -48,7 +34,7 @@ export default function Layout({ children }) {
         <div className="relative isolate">
           <svg
             aria-hidden="true"
-            className={`absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 ${theme === "dark" ? "dark:stroke-gray-700" : ""} [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]`}
+            className={`absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]`}
           >
             <defs>
               <pattern
@@ -62,7 +48,7 @@ export default function Layout({ children }) {
                 <path d="M.5 200V.5H200" fill="none" />
               </pattern>
             </defs>
-            <svg x="50%" y={-1} className={`overflow-visible fill-gray-50 ${theme === "dark" ? "dark:fill-gray-800" : ""}`}>
+            <svg x="50%" y={-1} className={`overflow-visible fill-gray-50`}>
               <path
                 d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
                 strokeWidth={0}
@@ -95,7 +81,7 @@ export default function Layout({ children }) {
         </div>
       </main>
       <footer className="mx-auto mt-24 max-w-7xl overflow-hidden px-6 pb-20 sm:mt-48 sm:pb-24 lg:px-8">
-        <p className={`mt-10 text-center text-xs leading-5 ${theme === "dark" ? "dark:text-gray-400" : "text-gray-500"}`}>
+        <p className={`mt-10 text-center text-xs leading-5 text-gray-500`}>
           &copy; {new Date().getFullYear()} Tom Hall, All rights reserved.
         </p>
       </footer>
