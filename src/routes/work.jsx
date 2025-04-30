@@ -13,9 +13,7 @@ export default function Work() {
     <Layout>
       <Navigation />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-12">
-          My Work
-        </h1>
+      <h1 className="text-md font-black uppercase tracking-tight text-gray-900 mb-12 p-4 rounded bg-black text-white">Work</h1>
         <ProjectShowcase projects={allProjects} />
       </div>
     </Layout>
