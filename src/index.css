@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+.dark {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Dark mode specific styles */
+.dark .todo-item {
+  background-color: #374151;
+  border-color: #4B5563;
+}
+
+.dark .todo-input {
+  background-color: #374151;
+  color: white;
+  border-color: #4B5563;
+}
+
+.dark .button {
+  background-color: #4B5563;
+  color: white;
+}
+
+.dark .button:hover {
+  background-color: #6B7280;
+} 
