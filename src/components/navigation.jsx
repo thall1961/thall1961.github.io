@@ -62,7 +62,7 @@ export function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex justify-between">
-          <nav className="p-6 lg:px-8 relative z-10">
+          <nav className={`${isWorkPage ? 'block' : 'hidden md:block'} p-6 lg:px-8 relative z-10`}>
             <div className="flex lg:flex-1 justify-between">
               <Link to="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Tom Hall | Developer</span>
